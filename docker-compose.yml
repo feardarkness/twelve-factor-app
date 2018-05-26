@@ -2,13 +2,20 @@ version: '3'
 
 services:
   app:
+    # Decidimos la imagen que queremos utilizar
     image: foo/bar:1.0
+    # que se reinicie si el servicio se detiene
+    restart: always
+    # varialbes de entorno
     env_file:
       - .env
+    # puerto para el bind
     ports:
-      - 8081:8080
+      - 8080:8080
+    # carpeta del equipo local, para que el container pueda persistir archivos
     volumes:
-      - appdata: '/srv/uploads'
+      - appdata:/srv/uploads
 
+# carpeta para persistir archivos como volumen
 volumes:
   appdata:
