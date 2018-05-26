@@ -1,0 +1,24 @@
+{
+  "name": "twelve-factor-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "archivo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feardarkness/twelve-factor-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feardarkness/twelve-factor-app/issues"
+  },
+  "homepage": "https://github.com/feardarkness/twelve-factor-app#readme",
+  "dependencies": {
+    "dotenv": "5.0.1",
+    "express": "4.16.3"
+  }
+}
