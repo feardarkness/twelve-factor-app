@@ -15,6 +15,10 @@ services:
     # carpeta del equipo local, para que el container pueda persistir archivos
     volumes:
       - appdata:/srv/uploads
+    # Límite de memoria
+    mem_limit: 300m
+    # límite de memoría swap
+    memswap_limit: 1g
 
 # carpeta para persistir archivos como volumen
 volumes:
